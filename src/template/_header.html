@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ 	<meta charset="UTF-8" />
+	<title>@@title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+	@@for (var i = 0; i < linkStyles.length; i++) {
+	  <link rel="stylesheet" type="text/css" href="`+linkStyles[i]+`" />
+	}
+	<link rel="stylesheet" type="text/css" href="@@relativePath/css/all.css">
+	<script type="text/javascript" src="@@relativePath/libs/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="@@relativePath/js/core.js"></script>
+	<script type="text/javascript" src="@@relativePath/js/ui.js"></script>
+
+</head>
+<body>

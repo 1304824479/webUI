@@ -1,0 +1,40 @@
+{
+  "note": "mock server",
+  "mockDirectory": "./mock",
+  "quiet": false,
+  "port": "7878",
+  "latency": 50,
+  "logRequestHeaders": false,
+  "corsCredentials": "true",
+  "webServices": {
+    "first": {
+      "mockFile": "grid.json",
+      "latency": 20,
+      "verbs": ["get","post"],
+      "alternatePaths": ["1st"],
+      "contentType":"application/json; charset=utf-8"
+    },
+    "city": {
+      "mockFile": "city.json",
+      "latency": 20,
+      "verbs": ["get","post"],
+      "alternatePaths": ["1st"],
+      "contentType":"application/json; charset=utf-8"
+    },
+    "list": {
+      "mockFile": "list.json",
+      "latency": 20,
+      "verbs": ["get","post"],
+      "alternatePaths": ["1st"],
+      "contentType":"application/json; charset=utf-8"
+    },
+    "entity": {
+      "mockFile": "entity.json",
+      "latency": 20,
+      "verbs": ["get","post"],
+      "alternatePaths": ["1st"],
+      "contentType":"application/json; charset=utf-8"
+    }
+    
+  }
+}

@@ -1,0 +1,31 @@
+@@include('_header.html', {
+"title": "武汉研发中心OA项目前端开发文档",
+"relativePath":"."
+})
+<script type="text/javascript" src="js/pages/zdesk.js"></script>
+<div class="page">
+<!-- 头部开始  -->
+@@include('_main_top.html')
+<!-- 头部结束  -->
+
+<!-- 内容开始  -->
+<div  class="main-layout">
+	<!--左边内容布局开始  -->
+	<div class="leftside">
+		@@include('_left_menu.html')
+	</div>
+	<!--左边内容布局结束  -->
+
+	<!--主内容布局开始  -->
+	<div class="main-iframe">
+		<iframe  src="/views/desk/_zdesk.html"   name="iframe"   ></iframe>
+	</div>
+	<!--主内容布局结束  -->
+
+
+
+</div>
+<!-- 内容结束  -->
+
+</div>
+@@include('_footer.html')

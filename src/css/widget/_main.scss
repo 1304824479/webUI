@@ -1,0 +1,119 @@
+$topHeight: 60px;
+$leftsideWidth: 200px;
+$mainTabHeight: 40px;
+$tabliheight:24px!default;
+
+/* 页面整体样式 */
+html,body{
+	width: 100%;
+    height: 100%;
+}
+body, button, input, select, textarea {
+    font-size: 14px;
+    font-family: 'pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+    color:$text-color;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    min-width: 1100px;
+    overflow-y: hidden;
+
+}
+
+
+// Body text
+// -------------------------
+
+/* 头部样式 */
+.main-top{
+	width:100%;
+	height:$topHeight;
+	background-color:$sys-bg-color;
+}
+
+/* 主页面布局 */
+.main-layout{
+  position:relative;
+  @include heightCalc(100%,#{$topHeight});
+  .leftside {
+    width: $leftsideWidth;
+    height: 100%;
+    background-color:$sys-bg-color;
+    overflow-y:auto;
+    overflow-x:hidden;
+    float: left;
+  }
+  @include scrollbar(".leftside",$sys-bg-color);
+  .main-iframe{
+    /* @include heightCalc(100%,$mainTabHeight); */
+    height: 100%;
+    @include widthCalc(100%,#{$leftsideWidth});
+    float: left;
+    iframe{
+      border-width:0px;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}
+
+
+/* 子页面布局 */
+.page-layout{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 0px red solid;
+}
+
+.finanaly-header{
+     height: 91px;
+     border-bottom: 1px #e8e9ed solid;
+     color: #848aa0;
+     min-width: 1000px;
+     .f-logo{
+          float: left;
+          border-right: 1px #e8e9ed solid;
+          width: 197px;
+     }
+     .f-menu{
+         border:0px red solid;
+         float: left;
+         font-size: 16px;
+         margin-top: 35px;
+         a{
+             margin-left: 30px;
+             color: #848aa0;
+             i{
+               font-size: 16px;
+               margin-right: 10px;
+             }
+             &.active{
+                color: #4e7efa;
+             }
+         }
+     }
+
+     .f-headericon{
+       border:0px red solid;
+       float: right;
+       height:91px;
+       .h-p1{
+           float: left;
+           margin-top: 25px;
+           font-size: 16px;
+           margin-right:30px;
+       }
+       .h-p2{
+           float: left;
+           width: 90px;
+           height:90px;
+           text-align: center;
+           border-left: 1px #e8e9ed solid;
+           padding-top: 28px;
+       }
+     }
+
+}

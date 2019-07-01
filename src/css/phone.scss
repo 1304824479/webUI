@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ *  phone.scss 总样式文件
+ *
+ */
+
+//公共变量
+@import "./phone/_var";
+//工具类
+@import "./mixin/_mixin";
+
+//sprite
+@import "./base/_iconfont.scss";
+
+
+// 业务公共组件
+@import "./widget/_row.scss";
+
+
+//公共类
+@import "./phone/_main_reset.scss";
+@import "./phone/_main.scss";
+@import "./phone/_list.scss";
+@import "./phone/_tips.scss";
+
+
+//样式常量
+@import "./widget/_constant.scss";
+
+
+
+
+
+
+

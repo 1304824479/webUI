@@ -1,0 +1,27 @@
+@@include('_header.html', {
+"title": "弹框示例",
+"relativePath":"../.."
+})
+<div  class="page-layout">
+    <div class="buttonGroup">
+        <a class="btn btn-iroad" href="javascript:showDialog()" role="button"><i class="icon iconfont icon-zengjia"></i> 增加</a>
+    </div>
+
+
+
+</div>
+
+<div class="dialog-bg">
+    <div class="dialog">
+        <div class="dialogTitle">弹框标题 <i class="icon iconfont icon-close"></i></div>
+        <div class="dialogContent">
+            @@include('../views/dialog/html/demo2.html')
+        </div>
+        <div class="dialogBtn">
+            <a class="btn" href="#" role="button">增加</a>
+            <a class="btn cancel ml" href="javascript:hideDialog()" role="button">取消</a>
+        </div>
+    </div>
+</div>
+
+@@include('_footer.html')

@@ -1,0 +1,68 @@
+.row{
+   &:after{
+       display: table;
+       content: "";
+       clear: both;
+   }
+   .col-md-1{
+       display: block;
+       float: left;
+       width: calc(100%/12);
+   }
+  .col-md-2{
+    display: block;
+    float: left;
+    width: calc(100%/6);
+  }
+  .col-md-3{
+    display: block;
+    float: left;
+    width: calc(100%/4);
+  }
+  .col-md-4{
+    display: block;
+    float: left;
+    width: calc(100%/3);
+  }
+  .col-md-5{
+    display: block;
+    float: left;
+    width: calc(100%/12*5);
+  }
+  .col-md-6{
+    display: block;
+    float: left;
+    width: calc(100%/2);
+  }
+  .col-md-7{
+    display: block;
+    float: left;
+    width: calc(100%/12*7);
+  }
+  .col-md-8{
+    display: block;
+    float: left;
+    width: calc(100%/3*2);
+  }
+  .col-md-9{
+    display: block;
+    float: left;
+    width: calc(100%/4*3);
+  }
+  .col-md-10{
+    display: block;
+    float: left;
+    width: calc(100%/6*5);
+  }
+  .col-md-11{
+    display: block;
+    float: left;
+    width: calc(100%/12*11);
+  }
+  .col-md-12{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+}

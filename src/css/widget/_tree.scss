@@ -1,0 +1,46 @@
+.tree{
+    font-size:$text-14;
+    color: #333;
+    li>ul{
+        margin-left: 25px;
+    }
+    div{
+      margin-top: 10px;
+      i{
+        cursor: pointer;
+        font-size:16px;
+        vertical-align:0px;
+        font-weight: normal;
+      }
+      .tree-input{
+           margin-left:1px;
+           input{
+             outline: none;
+           }
+      }
+      .tree-text{
+          cursor: pointer;
+          margin-left:2px;
+          a{
+            color: #000;
+          }
+      }
+      .tree-person{
+          background-color: #fde4c4;
+          padding:2px 5px;
+          color: #f8a63a;
+      }
+      .icon-company{
+          font-weight: bold;
+      }
+      .icon-company:before{
+          font-weight: normal;
+      }
+      .icon-zaixianrenshu{
+           font-size: 14px;
+      }
+      .selected{
+          color: $sys-bg-color;
+      }
+    }
+}

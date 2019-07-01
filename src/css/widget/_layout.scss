@@ -1,0 +1,71 @@
+$layout-left-width:350px;
+$layout-spacing:5px;
+.layout{
+    border:0px red solid;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .layout-left{
+        height: 100%;
+        width: $layout-left-width;
+        float: left;
+        overflow: auto;
+    }
+
+    .layout-right{
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        @include widthCalc(100%,$layout-left-width+20);
+        overflow: auto;
+    }
+
+    .layout-son{
+        border: 1px  solid $border-gray;
+        overflow: hidden;
+        .layout-content{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        @include scrollbar(".layout-content",$border-gray);
+    }
+    .layout-son-bg{
+        background-color: $text-color-white;
+    }
+
+    .layout-vertical-arrow{
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+        &:hover{
+           background-color: $text-color-white;
+        }
+
+    }
+    .layout-horizontal-arrow{
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        cursor: pointer;
+        &:hover{
+          background-color: $text-color-white;
+        }
+    }
+    .mini-left{
+        background: url(../images/layout/mini-left.gif) center center no-repeat;
+    }
+    .mini-right{
+       background: url(../images/layout/mini-right.gif) center center no-repeat;
+    }
+    .mini-top{
+      background: url(../images/layout/mini-top.gif) center center no-repeat;
+    }
+    .mini-bottom{
+      background: url(../images/layout/mini-bottom.gif) center center no-repeat;
+    }
+}

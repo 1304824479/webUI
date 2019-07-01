@@ -1,0 +1,61 @@
+@@include('_header.html', {
+"title": "截图下载",
+"relativePath":"../.."
+})
+<script type="text/javascript" src="../../libs/html2canvas.min.js"></script>
+<div class="page-layout" >
+    <div class="page-header"><h1>截图下载</h1></div>
+    <div class="mt-lg font-b fontsize16">截图下载</div>
+    <div class="mt fontsize14 ">知识点：无</div>
+    <!--案案例1：保存图片 -->
+    <div class="mt-lg font-b fontsize14">案例1：保存图片</div>
+    <div class="mt fontsize14 ">知识点：截图下载需要引入html2canvas.min.js</div>
+    <div class="mt">代码如下：</div>
+    <xmp class="demo-code mt">
+        <script type="text/javascript" src="../../libs/html2canvas.min.js"></script>
+        <input type="button" value="确定下载" class="btn" id="creat">
+        <a  id="down_button" ></a>
+        <div class="mt border width350 bgcolor-one" id="container">
+            我是要被下载成图片的文字<br><br>
+            需要下载图片，加我微信号<br><br>
+            我的微信号是：18823660587
+        </div>
+        <script type="text/javascript">
+            $("#creat").click(function(){
+                html2canvas($("#container"),{
+                    onrendered:function(canvas){
+                        dataURL =canvas.toDataURL("image/png");
+                        //下载图片
+                        $('#down_button').attr( 'href' ,  dataURL ) ;
+                        $('#down_button').attr( 'download' , 'myjobdeer.png' ) ;
+                        document.getElementById("down_button").click();
+                    }
+                })
+            })
+        </script>
+    </xmp>
+    <div class="mt">效果如下：</div>
+    <input type="button" value="确定下载" class="btn mt" id="creat">
+    <a  id="down_button" ></a>
+    <div class="mt border width350 bgcolor-one" id="container">
+        我是要被下载成图片的文字<br><br>
+        需要下载图片，加我微信号<br><br>
+        我的微信号是：18823660587
+    </div>
+
+</div>
+<script type="text/javascript">
+    $("#creat").click(function(){
+        html2canvas($("#container"),{
+            onrendered:function(canvas){
+                dataURL =canvas.toDataURL("image/png");
+                //下载图片
+                $('#down_button').attr( 'href' ,  dataURL ) ;
+                $('#down_button').attr( 'download' , 'myjobdeer.png' ) ;
+                document.getElementById("down_button").click();
+            }
+        })
+    })
+</script>
+
+@@include('_footer.html')

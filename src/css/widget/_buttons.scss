@@ -1,0 +1,84 @@
+$btn-bg:#2f4d71;
+$btn-hover-bg:#25446a;
+$btn-disable-bg:#c7c7c7;
+$btn-blue-bg:#4d7efa;
+$btn-blue-hover-bg:#2562fb;
+$btn-gray-bg:#9ba3ae;
+$btn-gray-hover-bg:#8c95a1;
+$btn-pale-bg:#f4f5fa;
+$btn-pale-hover-bg:#edeef1;
+$btn-custom-bg:#f8a63a;
+a,input[type='button'],input[type='submit']{
+    &.btn{
+        background-color: $btn-bg;
+        padding: 10px 20px;
+        color: #ffffff;
+        border-radius: 4px;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    &.btn:hover{
+       background-color: $btn-hover-bg;
+    }
+
+    &.disabled{
+        background-color: $btn-disable-bg;
+        cursor: inherit;
+    }
+    &.disabled:hover{
+        background-color: $btn-disable-bg;
+    }
+    &.cancel{
+      background-color: $btn-gray-bg;
+    }
+    &.cancel:hover{
+      background-color: $btn-gray-hover-bg;
+    }
+
+    &.btn-gray{
+      background-color: $btn-gray-bg;
+    }
+    &.btn-gray:hover{
+      background-color: $btn-gray-hover-bg;
+    }
+
+    &.btn-blue{
+      background-color: $btn-blue-bg;
+    }
+    &.btn-blue:hover{
+      background-color: $btn-blue-hover-bg;
+    }
+
+    &.btn-pale{
+      background-color: $btn-pale-bg;
+    }
+    &.btn-pale:hover{
+      background-color: $btn-pale-hover-bg;
+    }
+
+    &.btn-small{
+      padding: 5px 10px;
+    }
+}
+
+
+i.iroad-icon{
+    display: inline-block;
+    color: $btn-bg;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-text{
+  display: inline-block;
+  text-align: center;
+  max-width: 115px;
+  vertical-align: top;
+  span{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}

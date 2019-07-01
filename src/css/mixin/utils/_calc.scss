@@ -1,0 +1,11 @@
+@mixin widthCalc($width1,$width2) {
+  width: -moz-calc(#{$width1} - #{$width2});
+  width: -webkit-calc(#{$width1} - #{$width2});
+  width: calc(#{$width1} - #{$width2});
+}
+
+@mixin heightCalc($height1,$height2) {
+   height: -moz-calc(#{$height1} - #{$height2});
+   height: -webkit-calc(#{$height1} - #{$height2});
+   height: calc(#{$height1} - #{$height2});
+}

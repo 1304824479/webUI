@@ -1,0 +1,18 @@
+@@include('_header.html', {
+"title": "模板页面",
+"relativePath":"../.."
+})
+
+<div  class="page-layout">
+    <input type='submit' class='btn btn-iroad ' name='submit' value='提交'/>
+
+    <script type="text/javascript">
+        $(function(){
+            $("input[type='submit']").click(function(){
+                $("input[type='submit']").addClass("disabled").blur();
+            });
+        })
+    </script>
+</div>
+
+@@include('_footer.html')

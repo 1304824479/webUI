@@ -1,0 +1,117 @@
+/* 弹框 */
+$border-radius:5px;
+$dialog-border:					 #e1e1e2 !default;
+$dialog-bg:					 	 #ffffff !default;
+$dialog-head-bg:				 #f6f9f8 !default;
+$dialog-btns-bg:				 #f6f9f8 !default;
+$dialog-border-head-bottom:		 #e8e8eb !default;
+$dialog-border-foot-top:		 #e8e8eb !default;
+$dialog-title:					 #343434 !default;
+$dialog-close-bg:				 #ea6557 !default;
+$dialog-tools-hover:		     #2d4e72 !default;
+$dialog-btns-padding-x:		     3px !default;
+$dialog-btns-padding-y:		     18px !default;
+$dialog-header-height:    50px !default;
+.dialog-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(0,0,0,0.2);
+}
+
+.dialog{
+    width: 600px;
+    position:fixed;
+    z-index: 200;
+    padding:0;
+    margin:0;
+    left: 50%;
+    margin-left: -300px;
+    border-radius: 5px;
+    background:$dialog-bg;
+    top: 50%;
+    .dialogTitle{
+        height: $dialog-header-height;
+        background-color:$dialog-head-bg;
+        border-bottom: 1px solid $dialog-border-head-bottom;
+        line-height: $dialog-header-height;
+        font-size: $text-16;
+        text-indent: 20px;
+        font-weight: bold;
+        color: #333333;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        i{
+            float: right;
+            cursor: pointer;
+            margin-right: 15px;
+            font-weight: normal;
+            font-size: 10px;
+            @include opacity(0.3);
+        }
+    }
+
+    .ligerDialogTitle{
+        height: 35px;
+        border-bottom: 1px solid $dialog-border-head-bottom;
+        line-height: 35px;
+        font-size: $text-16;
+        margin-left: 20px;
+        margin-right: 20px;
+        i{
+            float: right;
+            text-indent:0px;
+            margin-right:5px;
+            cursor: pointer;
+            font-size: 10px;
+            @include opacity(0.3);
+        }
+    }
+    .icon-dialog-success:before{
+        color: #5cb85c;
+    }
+    .icon-dialog-warn:before{
+        color: #f0ad4e;
+    }
+    .icon-dialog-info:before{
+        color: #46b8da;
+    }
+    .icon-dialog-error:before{
+        color: #d43f3a;
+    }
+    .icon-dialog-question:before{
+        color: #0275d8;
+    }
+
+
+    .dialogContent{
+        overflow-y: auto;
+        padding:0px;
+    }
+
+
+    .ligerDialogContent{
+        margin: 10px 20px;
+    }
+
+    .dialogBtn{
+        padding: 10px;
+        text-align: right;
+        margin:0px 10px;
+    }
+
+    .ligerDialogBtn{
+        text-align: right;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 10px;
+    }
+
+}
+

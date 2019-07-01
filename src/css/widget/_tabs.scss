@@ -1,0 +1,183 @@
+/* tabs选项卡 */
+$tabs-header-bg:				 #f6f9f8 !default;
+$tabs-border-header-bottom:		 #e8e8eb !default;
+$tabs-border-header-tab-bottom-hover: #2f4d71 !default;
+$tabs-border-header-tab-text-hover:  #2f4d71 !default;
+$tabs-border-border2: #eceef0 !default;
+.tabs-menu-one{
+    height: 38px;
+    p{
+      float: left;
+      line-height: 36px;
+      margin: 0px;
+      padding: 0px 25px;
+      border-right:1px solid $border-gray;
+      background-color: #c7c7c7;
+      color: $text-color-white;
+      a{
+        color: $text-color-white;
+      }
+      &.selected{
+        background-color: $tabs-border-header-tab-text-hover;
+        color: $text-color-white;
+        line-height: 36px;
+        font-weight: bold;
+        a{
+          color: $text-color-white;
+        }
+      }
+      &:first-child{
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+      }
+      &:last-child{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+}
+
+.tabs-menu-two{
+    border:1px solid $border-gray;
+    border-right-width: 0px;
+    display: inline-block;
+    p{
+      float: left;
+      line-height: 39px;
+      margin: 0px;
+      padding: 0px 30px;
+      border-right:1px solid $border-gray;
+      a{
+        color: $text-color;
+      }
+      &.selected{
+        background-color: $tabs-border-header-tab-text-hover;
+        color: $text-color-white;
+        line-height: 40px;
+        font-weight: bold;
+        a{
+          color: $text-color-white;
+        }
+      }
+    }
+    &:after{
+      display: block;
+      clear: both;
+      content: "";
+    }
+}
+.tabs-menu-three{
+  background: $tabs-header-bg;
+  p{
+    float: left;
+    line-height: 39px;
+    margin: 0px;
+    padding: 0px 30px;
+    a{
+      color: $text-color;
+      display: block;
+      width: 100%;
+    }
+    &.selected{
+      color: $tabs-border-header-tab-text-hover;
+      border-bottom: 2px solid $tabs-border-header-tab-text-hover;
+      line-height: 38px;
+      font-weight: bold;
+      a{
+        color: $tabs-border-header-tab-text-hover;
+      }
+    }
+    &:hover{
+      color: $tabs-border-header-tab-text-hover;
+      border-bottom: 2px solid $tabs-border-header-tab-text-hover;
+      line-height: 38px;
+      font-weight: bold;
+      a{
+        color: $tabs-border-header-tab-text-hover;
+      }
+    }
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.tabs-menu-four{
+
+    p{
+      float: left;
+      line-height: 39px;
+      margin: 0px;
+      padding: 0px 15px;
+      a{
+        color: $text-color;
+        display: block;
+        width: 100%;
+      }
+      &.selected{
+        color: $tabs-border-header-tab-text-hover;
+        font-weight: bold;
+        a{
+          color: $tabs-border-header-tab-text-hover;
+        }
+      }
+      &:hover{
+        color: $tabs-border-header-tab-text-hover;
+        font-weight: bold;
+        a{
+          color: $tabs-border-header-tab-text-hover;
+        }
+      }
+    }
+    &:after{
+      display: block;
+      clear: both;
+      content: "";
+    }
+    .spanbtn{
+        display: inline-block;
+        float: right;
+        line-height: 39px;
+        margin-right: 20px;
+    }
+}
+
+
+.tabs-menu-five{
+  border-bottom:1px $tabs-border-border2 solid;
+  height: 60px;
+  p{
+    float: left;
+    line-height: 58px;
+    margin: 0px;
+    padding: 0px 15px;
+    a{
+      color: $text-color;
+      display: block;
+      width: 100%;
+    }
+    &.selected{
+      color: #004eff;
+      font-weight: bold;
+      border-bottom: 2px #004eff solid;
+      a{
+        color: #004eff;
+      }
+    }
+  }
+  &:after{
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+}
+
+.tabs{
+   .tabs-content{
+      border: 0px solid red;
+      display: none;
+   }
+}

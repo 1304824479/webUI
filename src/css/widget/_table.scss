@@ -1,0 +1,101 @@
+/* 表格 */
+$table-border:				 #dfe5e7 !default;
+$table-header-bg:			 #f5f8fd !default;
+$table-tr-odd-bg:			 #f6f8fd !default;
+$table-tr-even-bg:			 #ffffff !default;
+$table-tr-hover-bg:			 #eef3fd !default;
+$table-tr-hover-border:	     #c6dffe !default;
+$table-border2: #eceef0 !default;
+$table-header-bg2: #f2f5fd !default;
+/*  表格样式   */
+table{
+  border-collapse:collapse;
+  text-align:center;
+  width:100%;
+  tr{
+    td{
+      border:1px solid $table-border;
+      font-size: 14px;
+    }
+  }
+
+  &.iroadTable{
+    border:1px solid $table-border;
+    tr{
+        td{
+          padding:10px;
+          color:#363f45;
+          border:0px solid $table-border;
+        }
+      &:nth-child(odd){background-color:$table-tr-odd-bg;}
+      &:nth-child(even){background-color:$table-tr-even-bg; }
+      &:hover{background-color:$table-tr-hover-bg;  }
+    }
+    tr.tableHeader{
+      background-color:$table-header-bg;
+      td{
+        border:1px solid $table-border;
+        font-size: 14px;
+      }
+      &.tableHeader:hover{background-color:$table-header-bg; }
+    }
+  }
+
+  &.iroadTable2{
+    tr{
+      td{
+        padding:25px 10px;
+        color:#363f45;
+        border:0px solid $table-border;
+        border-bottom:1px solid $table-border2;
+      }
+    }
+    tr.tableHeader{
+      background-color:$table-header-bg2;
+      height: 50px;
+      td{
+        padding: 0px 10px;
+        border:0px solid $table-border;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &.table-custom-noborder{
+       tr{
+          td{
+             border: none;
+          }
+       }
+  }
+  &.table-custom-padding{
+      tr{
+        td{
+          padding: 10px 0px;
+        }
+      }
+  }
+
+  &.table-no-border{
+    tr{
+      td{
+
+        border: none;
+        &:nth-child(odd){ text-align: right;padding:10px ; }
+        &:nth-child(even){ text-align:left; padding:10px 0px ;}
+      }
+    }
+  }
+
+  &.table-border{
+    tr{
+      td{
+
+        &:nth-child(odd){ text-align: right;padding:10px ; }
+        &:nth-child(even){ text-align:left;padding:10px 0px ; }
+      }
+    }
+  }
+}
+
+

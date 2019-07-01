@@ -1,0 +1,26 @@
+{
+	"core":[
+		"src/js/core/util.js",
+		"src/js/core/verific.js",
+		"src/js/core/select.js",
+		"src/js/core/pc.js"
+	],
+	"ui":[
+		"src/js/ui/dialog.js",
+		"src/js/ui/drag.js",
+		"src/js/ui/ecalendar.js",
+		"src/js/ui/file.js",
+		"src/js/ui/layout.js",
+		"src/js/ui/tabs.js",
+		"src/js/ui/tree.js"
+	],
+	"phone":[
+		"src/js/phone/cookie.js",
+		"src/js/phone/domain.js",
+		"src/js/phone/init.js",
+		"src/js/phone/app.js",
+		"src/js/phone/util.js",
+		"src/js/phone/list.js",
+		"src/js/phone/entity.js"
+	]
+}

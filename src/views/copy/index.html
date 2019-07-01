@@ -1,0 +1,21 @@
+@@include('_header.html', {
+"title": "js复制功能",
+"relativePath":"../.."
+})
+<div  class="page-layout">
+    <input id="foo" type="text" value="hello111">
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button> <br><br>
+
+    <script src="../../libs/clipboard.js"></script>
+    <script>
+        var clipboard = new Clipboard('.btn');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+</div>
+@@include('_footer.html')

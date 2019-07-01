@@ -1,0 +1,42 @@
+.fenyeBorder{border:0px #d7d8da solid;clear:both;height:35px;margin-top: 10px; }
+.fenye{
+    height:32px;
+    float:right;
+    border:0px #F00 solid;
+    font-size:14px;
+   div{
+      float:left;
+   }
+   .fenye-txt{
+        line-height:30px;
+        margin-left:10px;
+   }
+  .fenye-btn{
+      border:1px #d7d8da solid;
+      line-height:30px;
+      margin-left:15px;
+      padding:0px 20px;
+     a{
+       color:#666;
+     }
+  }
+  .fenye-num{
+      border:1px #d7d8da solid;
+      line-height:30px;
+      margin-left:15px;
+      padding:0px 10px;
+      text-align:center;
+      font-weight:bolder;
+      a{
+        color:#666;
+      }
+  }
+  #selected{
+    background-color:#2f4d71;
+    color:#FFF;
+    border-color:#2f4d71;
+    a{
+      color:#FFF;
+    }
+  }
+}

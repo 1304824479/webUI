@@ -1,0 +1,60 @@
+.main-tree{
+    border:0px red solid;
+    i{
+       font-size: 16px;
+    }
+    >li{
+      border:0px #000000 solid;
+      font-size:16px;
+      color: $text-color-white;
+      a{
+         font-size:16px;
+         color: $text-color-white;
+         display: block;
+      }
+      div{
+         height: 46px;
+         line-height: 46px;
+         &:hover{ background:$mtree-hover;}
+         &.selected { background-color:$mtree-hover;}
+         cursor: pointer;
+      }
+      ul{
+        display: none;
+      }
+
+      >div{
+         border:0px green solid;
+         padding-left:25px;
+
+      }
+
+      >ul{
+          >li{
+            >div{
+              border:0px green solid;
+              padding-left:40px;
+            }
+            >ul{
+              >li{
+                >div{
+                  border:0px #5e800b solid;
+                  padding-left:60px;
+                }
+                >ul{
+                  >li{
+                    >div{
+                        border:0px #5e800b solid;
+                        padding-left:80px;
+                    }
+                  }
+                }
+
+
+              }
+            }
+          }
+      }
+
+    }
+}

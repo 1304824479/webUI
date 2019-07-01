@@ -1,0 +1,39 @@
+@@include('_header.html', {
+"title": "文件上传",
+"relativePath":"../.."
+})
+<div class="page-layout" >
+    <div class="page-header"><h1>文件上传</h1></div>
+    <div class="mt-lg font-b fontsize16">文件上传</div>
+    <div class="mt fontsize14 ">知识点：无</div>
+    <!--案案例1：文件上传 -->
+    <div class="mt-lg font-b fontsize14">案例1：文件上传</div>
+    <div class="mt fontsize14 ">知识点：文件上传只需要调用fileUtil.upload方法即可</div>
+    <div class="mt">代码如下：</div>
+    <xmp class="demo-code mt">
+    <a class="color-sys" href="javascript:upload()" ><i class="icon iconfont icon-fujian"></i>选择文件</a>
+    <script type="text/javascript">
+        function upload(){
+            var url="http://local.iroad.com:8080/ajax/file_ajax_upload.html"; //上传文件的URL路径
+            fileUtil.upload(url,function (data) {
+                console.log(data);
+            });
+        }
+    </script>
+    </xmp>
+    <div class="mt">效果如下：</div>
+    <div class="mt">
+        <a class="color-sys" href="javascript:upload()" ><i class="icon iconfont icon-fujian"></i>选择文件</a>
+    </div>
+
+</div>
+<script type="text/javascript">
+    function upload(){
+        var url="http://local.iroad.com:8080/ajax/file_ajax_upload.html"; //上传文件的URL路径
+        fileUtil.upload(url,function (data) {
+            console.log(data);
+        });
+    }
+</script>
+
+@@include('_footer.html')

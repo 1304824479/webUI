@@ -1,0 +1,111 @@
+a{
+   text-decoration: none;
+   color: #333333;
+}
+/* 头部样式 */
+.main-top{
+  .logo{
+    display: inline-block;
+    color:$text-color-white;
+    text-align:left;
+    height: $topHeight;
+    margin-left: 0px;
+    .logo-ico,.logo-des{
+      float:left;
+    }
+    .logo-ico{
+      width: $leftsideWidth;
+      height: $topHeight;
+      text-align: center;
+      img{
+        margin-top: 10px;
+      }
+    }
+    .logo-des{
+      margin-top:11px;
+      padding-left: 15px;
+      border-left:2px solid $text-color-white;
+      .cn{
+        font-size: 15px;
+        letter-spacing:11px;
+      }
+      .en{
+        font-size: 12px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+    p{
+      margin:0;
+    }
+    @include clearfix;
+  }
+
+  .system-cat{
+    display: inline-block;
+    color:$text-color-white;
+    margin-left:20px;
+    height:100%;
+    li{
+      display:inline-block;
+      float:left;
+      margin-right:25px;
+      font-size:$text-16;
+      padding:5px 15px 6px 15px;
+      border-radius: 20px;
+      margin-top: 12px;
+      a{
+        color:$text-color-white;
+      }
+      &.active{
+        background-color: $sys-active-color;
+      }
+    }
+
+    @include clearfix;
+  }
+
+  .system-user{
+    border:0px red solid;
+    float: right;
+    color: $text-color-white;
+    height:100%;
+    margin-right:30px;
+    .userphoto{
+      float: left;
+      width: 35px;
+      height: $topHeight;
+      margin-left: 5px;
+      border:0px #000000 solid;
+      p{
+        margin-top:17px;
+        width:24px;
+        height:24px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .username{
+      float: left;
+      position: relative;
+      height:100%;
+      line-height:$topHeight;
+    }
+    .logout{
+      float: left;
+      height:100%;
+      margin-left:15px;
+      line-height:$topHeight;
+      a{
+        color: $text-color-white;
+      }
+    }
+
+  }
+
+}
+
+

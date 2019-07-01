@@ -1,0 +1,37 @@
+
+// -------------------------
+.page{
+    width:$page-width;
+    margin:0 auto;
+    height: 100%;
+    background-color: $page-bg-color;
+    font-size: 24px;
+    position: relative;
+    .page-header{
+         height: #{$page-header-height+$phone-status-height};
+         background-color: $page-header-bg-color;
+         color: $page-header-color;
+         line-height: $page-header-height;
+         text-align: center;
+         padding-top:$phone-status-height;
+    }
+    .page-content{
+        @include heightCalc(100%,#{$page-header-height+$phone-status-height+$page-footer-height});
+        background-color: $page-content-bg-color;
+        overflow-y: auto;
+    }
+    .page-content-nofooter{
+      @include heightCalc(100%,#{$page-header-height+$phone-status-height});
+      background-color: $page-content-bg-color;
+      overflow-y: auto;
+    }
+    .page-footer{
+        height: $page-footer-height;
+        background-color: $page-footer-bg-color;
+    }
+}
+
+
+
+
+

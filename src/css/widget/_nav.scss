@@ -1,0 +1,46 @@
+.nav{
+    position: relative;
+    height: 30px;
+    .back{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+        i{
+          font-size: 25px;
+          vertical-align: middle;
+        }
+        a{
+          font-size: 16px;
+        }
+    }
+    .title{
+        font-size: 18px;
+        display:block;
+        text-align: center;
+    }
+}
+
+$process-bg:#eff1f6;
+.process-bg{
+    box-shadow:-5px 0 10px $process-bg, /*左边阴影 border:1px #f5f5f6 solid; */
+    5px 0 10px $process-bg, /*右边阴影*/
+    0 -5px 10px $process-bg, /*顶部阴影*/
+    0 5px 10px $process-bg; /*底边阴影*/
+    padding: 70px 40px;
+}
+
+
+.nav-title{
+    display:block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    position:relative;
+    background-color:$panel-head-bg2;
+    border-bottom: 1px solid $panel-border;
+    font-size:$panel-title-size;
+    font-weight:bold;
+    @include clearfix;
+    border:1px solid $panel-border;
+    text-align: center;
+}
